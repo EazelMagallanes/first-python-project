@@ -1,0 +1,45 @@
+name=input("Name: ")
+section=input("Section: ")
+prelim=float(input("Prelim Grade: "))
+if 40<prelim<=100:
+    midterm=float(input("midterm grade: "))
+    if 40<midterm<100:
+         finals=float(input("final grade: "))
+         if 40<finals<100:
+             print("Grade: ",finals)
+             finalgrade=prelim+midterm+finals
+             finalgrade=round(finalgrade/3)
+             displayfinalgrade=str(finalgrade)
+             print("final grade: ",finalgrade)
+             if finalgrade >40 and finalgrade<=75:
+                 print("failed",finalgrade)
+                 print("GPA:5.0",finalgrade)
+             elif finalgrade <=75 and finalgrade >=77:
+                 print("passed",finalgrade)
+                 print("GPA:3.00",finalgrade)
+             elif finalgrade <=78 and finalgrade >=80:
+                 print("passed",finalgrade)
+                 print("GPA:2.75",finalgrade)
+             elif finalgrade <=81 and finalgrade >=83:
+                 print("passed",finalgrade)
+                 print("GPA:2.50",finalgrade)
+             elif finalgrade <=84 and finalgrade >=86:
+                 print("passed",finalgrade)
+                 print("GPA:2.25",finalgrade)
+             elif finalgrade <=87 and finalgrade >=89:
+                 print("passed",finalgrade)
+                 print("GPA:2.00",finalgrade)
+             elif finalgrade <=90 and finalgrade >=92:
+                 print("passed",finalgrade)
+                 print("GPA:1.75",finalgrade)
+             elif finalgrade <=93 and finalgrade >=95:
+                 print("passed",finalgrade)
+                 print("GPA:1.50",finalgrade)
+             elif finalgrade <=96 and finalgrade >=98:
+                 print("passed",finalgrade)
+                 print("GPA:1.25",finalgrade)
+             elif finalgrade <=99 and finalgrade >=100:
+                 print("passed",finalgrade)
+                 print("GPA:1.00",finalgrade)
+             else:
+                 print("invalid grade")
